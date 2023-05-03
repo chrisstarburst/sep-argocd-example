@@ -1,0 +1,9 @@
+coordinator:
+  resources:
+    requests:
+      memory: "12Gi"
+      cpu: 3
+    limits:
+      memory: "12Gi"
+      cpu: 3
+
