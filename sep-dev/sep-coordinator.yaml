@@ -6,4 +6,15 @@ coordinator:
     limits:
       memory: "12Gi"
       cpu: 3
+worker:
+  replicas: 1
+  deploymentTerminationGracePeriodSeconds: 10 # default is 300; it is actually how long the graceful shutdown waits after it receives the SIGTERM
+  starburstWorkerShutdownGracePeriodSeconds: 120 # default is 120
+  resources:
+    requests:
+      memory: "12Gi"
+      cpu: 3
+    limits:
+      memory: "12Gi"
+      cpu: 3
 
